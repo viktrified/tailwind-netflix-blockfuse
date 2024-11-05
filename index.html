@@ -11,40 +11,64 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav class="flex justify-between items-center px-10">
-      <div class="flex items-center gap-10">
-        <!-- logo and nav section -->
-        <img
-          src="/static/images/netflix-logo-transparent.png"
-          class="h-20 w-32"
-          alt="logo"
-        />
-        <div class="flex sm:hidden">
-          <p>Browse</p>
-          <i class="fa-solid fa-caret-up transform rotate-180"></i>
+  <body class="relative">
+    <section class="bg-[url('/static/images/prisonbreakbackground.webp')] h-screen bg-no-repeat bg-cover">
+      <nav class="flex justify-between items-center px-10 text-white">
+        <div class="flex items-center gap-10">
+          <!-- logo and nav section -->
+          <img
+            src="/static/images/netflix-logo-transparent.png"
+            class="h-20 w-32"
+            alt="logo"
+          />
+          <div class="flex sm:hidden">
+            <p>Browse</p>
+            <i class="fa-solid fa-caret-up transform rotate-180"></i>
+          </div>
+          <ul class="gap-4 hidden sm:flex">
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>News & Popular</li>
+            <li>My List</li>
+            <li>Browse by Languages</li>
+          </ul>
         </div>
-        <ul class="gap-4 hidden laptop:flex">
-          <li>Home</li>
-          <li>TV Shows</li>
-          <li>Movies</li>
-          <li>News & Popular</li>
-          <li>My List</li>
-          <li>Browse by Languages</li>
-        </ul>
-      </div>
+  
+        <div class="flex gap-3 items-center">
+          <!-- icons section -->
+          <i class="fa-solid fa-magnifying-glass h-6"></i>
+          <p class="hidden lg:block">Kids</p>
+          <i class="fa-regular fa-bell h-6"></i>
+          <div class="h-9 aspect-square bg-blue-200"></div>
+          <i
+            class="fa-solid fa-caret-up transform hidden md:inline rotate-180"
+          ></i>
+        </div>
+      </nav>
 
-      <div class="flex gap-3 items-center">
-        <!-- icons section -->
-        <i class="fa-solid fa-magnifying-glass h-6"></i>
-        <p class="hidden lg:block">Kids</p>
-        <i class="fa-regular fa-bell h-6"></i>
-        <div class="h-9 aspect-square bg-blue-200"></div>
-        <i
-          class="fa-solid fa-caret-up transform hidden md:inline rotate-180"
-        ></i>
+      <!-- hero section content -->
+      <div class="text-white w-1/2 p-10 pr-52">
+        <img src="/static/images/prisonbreaktext.webp" alt="">
+        <p>#7 in TV Shows Today</p>
+        <p class="text-justify">To free his innocent brother from prison, a genius engineer plots an elaborate escape with help from friends — and the tattoos on his body.</p>
+        <button class="bg-white text-black px-7 py-3 rounded-lg hover:bg-gray-200"><i class="fa-solid fa-play mr-2 h-5"></i>Play</button>
+        <button class="bg-gray-500 px-7 py-3 rounded-lg hover:bg-gray-500/25">More info</button>
       </div>
-    </nav>
+    </section>
+
+
+    <section class="flex gap-4 bg-black/50 absolute -bottom-10">
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+      <div class="h-20 w-32 bg-gray-600"></div>
+    </section>
 
     <!-- <div class="">
     <div class="aspect-square h-32 bg-blue-500"></div>
